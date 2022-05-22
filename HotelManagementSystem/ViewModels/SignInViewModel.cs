@@ -22,7 +22,7 @@ namespace HotelManagementSystem.ViewModels
 
         public void signIn(object parameter)
         {
-
+            if(string.IsNullOrEmpty(email))
         }
 
         public ICommand SignInCommand

@@ -15,21 +15,13 @@ using System.Windows.Shapes;
 namespace HotelManagementSystem.Views
 {
     /// <summary>
-    /// Interaction logic for SignIn.xaml
+    /// Interaction logic for UnloggedMenu.xaml
     /// </summary>
-    public partial class SignIn : Window
+    public partial class UnloggedMenu : Window
     {
-        public SignIn()
+        public UnloggedMenu()
         {
             InitializeComponent();
-        }
-
-        public void SignInBackClick (object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            App.Current.MainWindow.Close();
-            App.Current.MainWindow = mainWindow;
-            App.Current.MainWindow.Show();
         }
     }
 }

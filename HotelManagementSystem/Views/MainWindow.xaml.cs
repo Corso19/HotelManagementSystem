@@ -27,15 +27,15 @@ namespace HotelManagementSystem.Views
         public MainWindow()
         {
             InitializeComponent();
-            _hotelContext.Users.Add(new User{
-                Email = "stefan@gmail.com",
-                FirstName = "Stefan",
-                LastName = "Acatrinei",
-                Password = "1234",
-                Username = "stefan123"
+            //_hotelContext.Users.Add(new User{
+            //    Email = "stefan@gmail.com",
+            //    FirstName = "Stefan",
+            //    LastName = "Acatrinei",
+            //    Password = "1234",
+            //    Username = "stefan123"
 
-            });
-            _hotelContext.SaveChanges();
+            //});
+            //_hotelContext.SaveChanges();
         }
 
         private void SignInClick(object sender, RoutedEventArgs e)

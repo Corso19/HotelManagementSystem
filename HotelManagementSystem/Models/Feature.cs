@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace HotelManagementSystem.Models
 {
-    public class Image
+    public class Feature
     {
         public int Id { get; set; }
-        public Byte[] Data { get; set; }
-        public int RoomId { get; set; }
-        public Room Room { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+
+        public List<FeatureRoom> FeaturesRoom { get; set; } 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManagementSystem.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using HotelManagementSystem.Models;
 
 namespace HotelManagementSystem.Views
 {
@@ -20,9 +22,20 @@ namespace HotelManagementSystem.Views
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly HotelContext _hotelContext = new HotelContext();
+
         public MainWindow()
         {
             InitializeComponent();
+            _hotelContext.Users.Add(new User{
+                Email = "stefan@gmail.com",
+                FirstName = "Stefan",
+                LastName = "Acatrinei",
+                Password = "1234",
+                Username = "stefan123"
+
+            });
+            _hotelContext.SaveChanges();
         }
 
         private void SignInClick(object sender, RoutedEventArgs e)

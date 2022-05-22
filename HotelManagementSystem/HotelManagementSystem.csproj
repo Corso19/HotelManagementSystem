@@ -65,10 +65,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\HotelContext.cs" />
+    <Compile Include="Migrations\202205221644378_InitialMigration.cs" />
+    <Compile Include="Migrations\202205221644378_InitialMigration.designer.cs">
+      <DependentUpon>202205221644378_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Feature.cs" />
+    <Compile Include="Models\FeatureRoom.cs" />
     <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\Offer.cs" />
     <Compile Include="Models\Prices.cs" />
+    <Compile Include="Models\Reservation.cs" />
+    <Compile Include="Models\ReservationService.cs" />
     <Compile Include="Models\Room.cs" />
-    <Compile Include="Models\RoomType.cs" />
+    <Compile Include="Models\RoomReservation.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminMenu.xaml.cs">
+      <DependentUpon>AdminMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminStart.xaml.cs">
+      <DependentUpon>AdminStart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoggedUserStart.xaml.cs">
+      <DependentUpon>LoggedUserStart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\NoAccountMenu.xaml.cs">
       <DependentUpon>NoAccountMenu.xaml</DependentUpon>
     </Compile>
@@ -78,6 +103,22 @@
     <Compile Include="Views\SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminStart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoggedUserStart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -117,6 +158,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202205221644378_InitialMigration.resx">
+      <DependentUpon>202205221644378_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

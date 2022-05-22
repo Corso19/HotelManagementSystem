@@ -11,11 +11,12 @@ namespace HotelManagementSystem.Models
         public int Id { get; set; }
         public int Floor { get; set; }
         public int Number { get; set; }
-        public bool Active { get; set; }
-        public int RoomTypeId { get; set; }
-
-        public RoomType Type { get; set; }
+        
         public List<Prices> Prices { get; set; }
+        public List<Image> Images { get; set; }
+        public List<FeatureRoom> FeaturesRoom { get; set; }
+        public List<RoomReservation> RoomReservations { get; set; }
+        public List<Offer> Offers { get; set; }
 
     }
 }

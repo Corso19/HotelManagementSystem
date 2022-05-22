@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelManagementSystem.Views"
         mc:Ignorable="d"
-        Title="Hotel Manager - Sign Up" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
-        
+        Title="Hotel Manager - Sign Up" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="#040516">
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="60" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+
+
+
+        <Label Content="Sign Up" Foreground="White" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="90" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+
+        <Label Foreground="White" Content="EMAIL" HorizontalAlignment="Center" Margin="0,158,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="20"/>
+        <TextBox  Foreground="White" HorizontalAlignment="Center" Height="50" Margin="0,200,0,0" MaxLength="35" VerticalAlignment="Top" Width="400" FontFamily="Segoe UI Black" FontSize="20" BorderThickness="2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" Text="{Binding Email}"/>
+
+        <Label Foreground="White" Content="PASSWORD" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="20"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="50" Width="400" Background="Transparent" BorderBrush="White" BorderThickness="2" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
     </Grid>
 </Window>

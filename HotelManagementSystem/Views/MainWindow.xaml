@@ -8,6 +8,7 @@
         Title="Hotel Manager - Welcome" Height="500" Width="750" WindowStartupLocation="CenterScreen">
     <Grid Background="#040516">
         <Label Content="HOTEL MANAGER" Foreground="White" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="185" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+        <Button Background="Yellow" Content="About" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="70" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
         <Button Background="Yellow" Content="Sign in to your account" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Width="400" Cursor="Hand" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Click="SignInClick"/>
         <Button Background="Yellow" Content="Create new account" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="400" Cursor="Hand" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Click="SignUpClick"/>
         <Button Background ="Yellow" Content="Login without account" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Width="400" Cursor="Hand" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" />

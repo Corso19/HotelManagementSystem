@@ -11,7 +11,9 @@ namespace HotelManagementSystem.Models
         public int Id { get; set; }
         public int Floor { get; set; }
         public int Number { get; set; }
-        
+
+        public bool Deleted { get; set; }
+
         public List<Prices> Prices { get; set; }
         public List<Image> Images { get; set; }
         public List<FeatureRoom> FeaturesRoom { get; set; }

@@ -31,5 +31,20 @@ namespace HotelManagementSystem.Views
             App.Current.MainWindow = adminMenu;
             App.Current.MainWindow.Show();
         }
+
+        public void AdminOfferAddClick(object sender, RoutedEventArgs e)
+        {
+            AdminAddOffer adminAddOffer = new AdminAddOffer();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminAddOffer;
+            App.Current.MainWindow.Show();
+        }
+        public void AdminOfferUpdateClick(object sender, RoutedEventArgs e)
+        {
+            AdminAddOffer adminAddOffer = new AdminAddOffer();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminAddOffer;
+            App.Current.MainWindow.Show();
+        }
     }
 }

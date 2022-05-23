@@ -8,20 +8,13 @@
         Title="AdminRoomPanel" Height="450" Width="800">
     <Grid Background="#040516">
         <Button Click="AdminPanelBack" Background="Yellow" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
-        <DataGrid 
-            AutoGenerateColumns="False" 
-            Margin="160,83,160,161" 
-            Height="190"
-            Width="480"
-            ItemsSource="{Binding usersList}" 
-            IsReadOnly="True" 
-            ScrollViewer.VerticalScrollBarVisibility="Hidden"
-            SelectedIndex="{Binding ID}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Room number" Binding="{Binding RoomNumber}"/>
-                <DataGridTextColumn Header="Room Floor" Binding="{Binding RoomFloor}"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <ListView
+                  Background="#272537"
+                  Foreground="White"
+                  SelectedIndex="{Binding ID}"
+                  ItemsSource="{Binding features}"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="160,77,160,127"
+                  />
         
         <Button Background="Yellow" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
         <Button Background="Yellow" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />

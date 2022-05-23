@@ -70,6 +70,14 @@
     <Compile Include="Migrations\202205221644378_InitialMigration.designer.cs">
       <DependentUpon>202205221644378_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205231817228_UpdateDB.cs" />
+    <Compile Include="Migrations\202205231817228_UpdateDB.designer.cs">
+      <DependentUpon>202205231817228_UpdateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231955490_UpdateDBTwo.cs" />
+    <Compile Include="Migrations\202205231955490_UpdateDBTwo.designer.cs">
+      <DependentUpon>202205231955490_UpdateDBTwo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BusinessLogicLayer\FeatureBBL.cs" />
     <Compile Include="Models\BusinessLogicLayer\OfferBBL.cs" />
@@ -88,11 +96,26 @@
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModels\AdminAddFeature.cs" />
+    <Compile Include="ViewModels\AdminFeaturesViewModel.cs" />
+    <Compile Include="ViewModels\AdminUpdateFeatureViewModel.cs" />
     <Compile Include="ViewModels\BaseVM.cs" />
     <Compile Include="ViewModels\SignInViewModel.cs" />
     <Compile Include="ViewModels\SignUpViewModel.cs" />
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminAddFeature.xaml.cs">
+      <DependentUpon>AdminAddFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminAddOffer.xaml.cs">
+      <DependentUpon>AdminAddOffer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminAddRoom.xaml.cs">
+      <DependentUpon>AdminAddRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminAddService.xaml.cs">
+      <DependentUpon>AdminAddService.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AdminFeaturesPanel.xaml.cs">
       <DependentUpon>AdminFeaturesPanel.xaml</DependentUpon>
@@ -108,6 +131,9 @@
     </Compile>
     <Compile Include="Views\AdminServicesPanel.xaml.cs">
       <DependentUpon>AdminServicesPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminUpdateFeature.xaml.cs">
+      <DependentUpon>AdminUpdateFeature.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoggedMenu.xaml.cs">
       <DependentUpon>LoggedMenu.xaml</DependentUpon>
@@ -128,6 +154,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\AdminAddFeature.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminAddOffer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminAddRoom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminAddService.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AdminFeaturesPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AdminServicesPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminUpdateFeature.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -197,6 +243,12 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202205221644378_InitialMigration.resx">
       <DependentUpon>202205221644378_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231817228_UpdateDB.resx">
+      <DependentUpon>202205231817228_UpdateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231955490_UpdateDBTwo.resx">
+      <DependentUpon>202205231955490_UpdateDBTwo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

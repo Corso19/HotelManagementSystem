@@ -27,20 +27,20 @@ namespace HotelManagementSystem.Views
         public MainWindow()
         {
             InitializeComponent();
-            _hotelContext.Features.Add(new Feature
-            {
-                Name = "Aer conditionat",
-                Description = "Pentru schimbarea temperaturii in camera"
+            //_hotelContext.Features.Add(new Feature
+            //{
+            //    Name = "Aer conditionat",
+            //    Description = "Pentru schimbarea temperaturii in camera"
 
-            }); 
-            _hotelContext.SaveChanges();
+            //}); 
+            //_hotelContext.SaveChanges();
         }
 
         private void SignInClick(object sender, RoutedEventArgs e)
         {
-            SignIn signIn = new SignIn();
+            AdminMenu adminMenu = new AdminMenu();
             App.Current.MainWindow.Close();
-            App.Current.MainWindow = signIn;
+            App.Current.MainWindow = adminMenu;
             App.Current.MainWindow.Show();
         }
 

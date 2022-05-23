@@ -23,5 +23,43 @@ namespace HotelManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        public void AdminMenuBackClick(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = mainWindow;
+            App.Current.MainWindow.Show();
+        }
+
+        public void OffersPanelClick(object sender, RoutedEventArgs e)
+        {
+            AdminOffersPanel adminOffersPanel = new AdminOffersPanel();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminOffersPanel;
+            App.Current.MainWindow.Show();
+        }
+        public void RoomPanelClick(object sender, RoutedEventArgs e)
+        {
+            AdminRoomPanel adminRoomPanel = new AdminRoomPanel();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminRoomPanel;
+            App.Current.MainWindow.Show();
+        }
+        public void ServicePanelClick(object sender, RoutedEventArgs e)
+        {
+            AdminServicesPanel adminServicesPanel = new AdminServicesPanel();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminServicesPanel;
+            App.Current.MainWindow.Show();
+        }
+        public void FeaturesPanelClick(object sender, RoutedEventArgs e)
+        {
+            AdminFeaturesPanel adminFeaturesPanel = new AdminFeaturesPanel();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminFeaturesPanel;
+            App.Current.MainWindow.Show();
+        }
+
     }
 }

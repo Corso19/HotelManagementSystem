@@ -15,13 +15,21 @@ using System.Windows.Shapes;
 namespace HotelManagementSystem.Views
 {
     /// <summary>
-    /// Interaction logic for AdminStart.xaml
+    /// Interaction logic for AdminFeaturesPanel.xaml
     /// </summary>
-    public partial class AdminStart : Window
+    public partial class AdminFeaturesPanel : Window
     {
-        public AdminStart()
+        public AdminFeaturesPanel()
         {
             InitializeComponent();
+        }
+
+        public void AdminPanelBack(object sender, RoutedEventArgs e)
+        {
+            AdminMenu adminMenu = new AdminMenu();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminMenu;
+            App.Current.MainWindow.Show();
         }
     }
 }

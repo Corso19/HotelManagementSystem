@@ -18,7 +18,7 @@
         <Label Content="Sign In" Foreground="White" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="95" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="25"/>
 
         <Label Foreground="White" Content="EMAIL" HorizontalAlignment="Center" Margin="0,158,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="20"/>
-        <TextBox CaretBrush="White" Foreground="White" HorizontalAlignment="Center" Height="50" Margin="0,200,0,0" MaxLength="35" VerticalAlignment="Top" Width="400" FontFamily="Segoe UI Black" FontSize="20" BorderThickness="2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" />
+        <TextBox Text="{Binding Email}" CaretBrush="White" Foreground="White" HorizontalAlignment="Center" Height="50" Margin="0,200,0,0" MaxLength="35" VerticalAlignment="Top" Width="400" FontFamily="Segoe UI Black" FontSize="20" BorderThickness="2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" />
 
         <Label Foreground="White" Content="PASSWORD" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="20"/>
         <PasswordBox CaretBrush="White" x:Name="passwordBox" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="50" Width="400" Background="Transparent" BorderBrush="White" BorderThickness="2" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />

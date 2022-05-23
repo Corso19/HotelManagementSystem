@@ -71,6 +71,11 @@
       <DependentUpon>202205221644378_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BusinessLogicLayer\FeatureBBL.cs" />
+    <Compile Include="Models\BusinessLogicLayer\OfferBBL.cs" />
+    <Compile Include="Models\BusinessLogicLayer\RoomBBL.cs" />
+    <Compile Include="Models\BusinessLogicLayer\ServiceBBL.cs" />
+    <Compile Include="Models\BusinessLogicLayer\UserBLL.cs" />
     <Compile Include="Models\Feature.cs" />
     <Compile Include="Models\FeatureRoom.cs" />
     <Compile Include="Models\Image.cs" />
@@ -82,15 +87,30 @@
     <Compile Include="Models\RoomReservation.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModels\BaseVM.cs" />
     <Compile Include="ViewModels\SignInViewModel.cs" />
+    <Compile Include="ViewModels\SignUpViewModel.cs" />
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminFeaturesPanel.xaml.cs">
+      <DependentUpon>AdminFeaturesPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AdminStart.xaml.cs">
-      <DependentUpon>AdminStart.xaml</DependentUpon>
+    <Compile Include="Views\AdminOffersPanel.xaml.cs">
+      <DependentUpon>AdminOffersPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminRoomPanel.xaml.cs">
+      <DependentUpon>AdminRoomPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminServicesPanel.xaml.cs">
+      <DependentUpon>AdminServicesPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoggedMenu.xaml.cs">
+      <DependentUpon>LoggedMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoggedUserStart.xaml.cs">
       <DependentUpon>LoggedUserStart.xaml</DependentUpon>
@@ -108,11 +128,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\AdminFeaturesPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AdminMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AdminStart.xaml">
+    <Page Include="Views\AdminOffersPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminRoomPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminServicesPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoggedMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

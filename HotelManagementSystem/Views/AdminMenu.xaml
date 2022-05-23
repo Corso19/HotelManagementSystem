@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="AdminMenu" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid Background="#040516">
-        
+        <Label Content="Welcome, Admin" Foreground="White" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" Width="184" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+        <Button Click="AdminMenuBackClick" Background="Yellow" Content="Log Out" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+        <Button Click="RoomPanelClick" Background="Yellow" Content="Room Panel" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,131,0,0" Width="170" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="40" />
+        <Button Click="ServicePanelClick" Background="Yellow" Content="Services Panel" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,185,0,0" Width="170" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="42" />
+        <Button Click="FeaturesPanelClick" Background="Yellow" Content="Features Panel" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,246,0,0" Width="170" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="43" />
+        <Button Click="OffersPanelClick" Background="Yellow" Content="Offers Panel" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,309,0,0" Width="170" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="40" />
+
     </Grid>
 </Window>

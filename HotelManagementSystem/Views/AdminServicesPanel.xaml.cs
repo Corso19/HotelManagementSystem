@@ -15,23 +15,21 @@ using System.Windows.Shapes;
 namespace HotelManagementSystem.Views
 {
     /// <summary>
-    /// Interaction logic for SignIn.xaml
+    /// Interaction logic for AdminServicesPanel.xaml
     /// </summary>
-    public partial class SignIn : Window
+    public partial class AdminServicesPanel : Window
     {
-        public SignIn()
+        public AdminServicesPanel()
         {
             InitializeComponent();
         }
 
-        public void SignInBackClick (object sender, RoutedEventArgs e)
+        public void AdminPanelBack(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            AdminMenu adminMenu = new AdminMenu();
             App.Current.MainWindow.Close();
-            App.Current.MainWindow = mainWindow;
+            App.Current.MainWindow = adminMenu;
             App.Current.MainWindow.Show();
         }
-
-       
     }
 }

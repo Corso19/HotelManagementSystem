@@ -27,15 +27,13 @@ namespace HotelManagementSystem.Views
         public MainWindow()
         {
             InitializeComponent();
-            //_hotelContext.Users.Add(new User{
-            //    Email = "stefan@gmail.com",
-            //    FirstName = "Stefan",
-            //    LastName = "Acatrinei",
-            //    Password = "1234",
-            //    Username = "stefan123"
+            _hotelContext.Features.Add(new Feature
+            {
+                Name = "Aer conditionat",
+                Description = "Pentru schimbarea temperaturii in camera"
 
-            //});
-            //_hotelContext.SaveChanges();
+            }); 
+            _hotelContext.SaveChanges();
         }
 
         private void SignInClick(object sender, RoutedEventArgs e)

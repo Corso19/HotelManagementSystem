@@ -1,0 +1,30 @@
+﻿<Window x:Class="HotelManagementSystem.Views.AdminServicesPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagementSystem.Views"
+        mc:Ignorable="d"
+        Title="AdminServicesPanel" Height="450" Width="800">
+    <Grid Background="#040516">
+        <Button Click="AdminPanelBack" Background="Yellow" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+        <DataGrid 
+            AutoGenerateColumns="False" 
+            Margin="160,83,160,161" 
+            Height="190"
+            Width="480"
+            ItemsSource="{Binding usersList}" 
+            IsReadOnly="True" 
+            ScrollViewer.VerticalScrollBarVisibility="Hidden"
+            SelectedIndex="{Binding ID}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Service name" Binding="{Binding RoomNumber}"/>
+                <DataGridTextColumn Header="Service price" Binding="{Binding RoomFloor}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Background="Yellow" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+        <Button Background="Yellow" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+        <Button Background="Yellow" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="550,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+    </Grid>
+</Window>

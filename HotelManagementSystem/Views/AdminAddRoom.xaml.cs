@@ -23,5 +23,13 @@ namespace HotelManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        public void AdminAddBackClick(object sender, RoutedEventArgs e)
+        {
+            AdminRoomPanel adminRoomPanel = new AdminRoomPanel();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminRoomPanel;
+            App.Current.MainWindow.Show();
+        }
     }
 }

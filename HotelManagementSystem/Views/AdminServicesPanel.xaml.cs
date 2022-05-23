@@ -31,5 +31,13 @@ namespace HotelManagementSystem.Views
             App.Current.MainWindow = adminMenu;
             App.Current.MainWindow.Show();
         }
+
+        public void AdminServicesAddClick(object sender, RoutedEventArgs e)
+        {
+            AdminAddService adminAddService = new AdminAddService();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminAddService;
+            App.Current.MainWindow.Show();
+        }
     }
 }

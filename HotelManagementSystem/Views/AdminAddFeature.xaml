@@ -22,6 +22,6 @@
         <Label Foreground="White" Content="Description" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="20"/>
         <TextBox Text="{Binding Description}" CaretBrush="White" Foreground="White" HorizontalAlignment="Center" Height="50" Margin="0,300,0,0" MaxLength="35" VerticalAlignment="Top" Width="400" FontFamily="Segoe UI Black" FontSize="20" BorderThickness="2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" />
 
-        <Button Background="Yellow" Content="Add Feature" HorizontalAlignment="Center" Margin="0,374,0,0" Width="400" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" Command="{Binding AddFeatureCommand}"/>
+        <Button Background="Yellow" Content="Add Feature" HorizontalAlignment="Center" Margin="0,374,0,0" Width="400" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" Command="{Binding SignInCommand}" CommandParameter="{Binding ElementName=passwordBox}"/>
     </Grid>
 </Window>

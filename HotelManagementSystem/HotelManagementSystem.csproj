@@ -78,6 +78,14 @@
     <Compile Include="Migrations\202205231955490_UpdateDBTwo.designer.cs">
       <DependentUpon>202205231955490_UpdateDBTwo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205232048338_UpdateDB-Three.cs" />
+    <Compile Include="Migrations\202205232048338_UpdateDB-Three.designer.cs">
+      <DependentUpon>202205232048338_UpdateDB-Three.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205232141368_UpdateDB-Four.cs" />
+    <Compile Include="Migrations\202205232141368_UpdateDB-Four.designer.cs">
+      <DependentUpon>202205232141368_UpdateDB-Four.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BusinessLogicLayer\FeatureBBL.cs" />
     <Compile Include="Models\BusinessLogicLayer\OfferBBL.cs" />
@@ -97,8 +105,13 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\AdminAddFeature.cs" />
+    <Compile Include="ViewModels\AdminAddOfferViewModel.cs" />
+    <Compile Include="ViewModels\AdminAddRoomViewModel.cs" />
     <Compile Include="ViewModels\AdminFeaturesViewModel.cs" />
+    <Compile Include="ViewModels\AdminOfferViewModel.cs" />
+    <Compile Include="ViewModels\AdminRoomViewModel.cs" />
     <Compile Include="ViewModels\AdminUpdateFeatureViewModel.cs" />
+    <Compile Include="ViewModels\AdminUpdateOfferViewModel.cs" />
     <Compile Include="ViewModels\BaseVM.cs" />
     <Compile Include="ViewModels\SignInViewModel.cs" />
     <Compile Include="ViewModels\SignUpViewModel.cs" />
@@ -134,6 +147,9 @@
     </Compile>
     <Compile Include="Views\AdminUpdateFeature.xaml.cs">
       <DependentUpon>AdminUpdateFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminUpdateOffer.xaml.cs">
+      <DependentUpon>AdminUpdateOffer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoggedMenu.xaml.cs">
       <DependentUpon>LoggedMenu.xaml</DependentUpon>
@@ -194,6 +210,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\AdminUpdateOffer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LoggedMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -249,6 +269,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205231955490_UpdateDBTwo.resx">
       <DependentUpon>202205231955490_UpdateDBTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205232048338_UpdateDB-Three.resx">
+      <DependentUpon>202205232048338_UpdateDB-Three.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205232141368_UpdateDB-Four.resx">
+      <DependentUpon>202205232141368_UpdateDB-Four.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

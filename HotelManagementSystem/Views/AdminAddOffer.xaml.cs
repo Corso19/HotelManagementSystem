@@ -26,9 +26,9 @@ namespace HotelManagementSystem.Views
 
         public void AdminAddBackClick(object sender, RoutedEventArgs e)
         {
-            AdminFeaturesPanel adminFeaturesPanel = new AdminFeaturesPanel();
+            AdminOffersPanel adminOffersPanel = new AdminOffersPanel();
             App.Current.MainWindow.Close();
-            App.Current.MainWindow = adminFeaturesPanel;
+            App.Current.MainWindow = adminOffersPanel;
             App.Current.MainWindow.Show();
         }
 

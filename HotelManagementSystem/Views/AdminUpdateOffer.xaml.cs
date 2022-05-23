@@ -15,22 +15,13 @@ using System.Windows.Shapes;
 namespace HotelManagementSystem.Views
 {
     /// <summary>
-    /// Interaction logic for AdminAddService.xaml
+    /// Interaction logic for AdminUpdateOffer.xaml
     /// </summary>
-    public partial class AdminAddService : Window
+    public partial class AdminUpdateOffer : Window
     {
-        public AdminAddService()
+        public AdminUpdateOffer()
         {
             InitializeComponent();
         }
-
-        public void AdminAddBackClick(object sender, RoutedEventArgs e)
-        {
-            AdminServicesPanel adminServicesPanel = new AdminServicesPanel();
-            App.Current.MainWindow.Close();
-            App.Current.MainWindow = adminServicesPanel;
-            App.Current.MainWindow.Show();
-        }
-
     }
 }

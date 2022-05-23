@@ -13,11 +13,14 @@ namespace HotelManagementSystem.Models
         public string Description { get; set; }
         public int RoomId { get; set; }
         public Room Room { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+
+        public int Price { get; set; }
 
         public bool Deleted { get; set; }
 
         public List<Reservation> Reservations { get; set; }
+
     }
 }

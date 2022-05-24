@@ -107,9 +107,11 @@
     <Compile Include="ViewModels\AdminAddFeature.cs" />
     <Compile Include="ViewModels\AdminAddOfferViewModel.cs" />
     <Compile Include="ViewModels\AdminAddRoomViewModel.cs" />
+    <Compile Include="ViewModels\AdminAddServiceViewModel.cs" />
     <Compile Include="ViewModels\AdminFeaturesViewModel.cs" />
     <Compile Include="ViewModels\AdminOfferViewModel.cs" />
     <Compile Include="ViewModels\AdminRoomViewModel.cs" />
+    <Compile Include="ViewModels\AdminServicesViewModel.cs" />
     <Compile Include="ViewModels\AdminUpdateFeatureViewModel.cs" />
     <Compile Include="ViewModels\AdminUpdateOfferViewModel.cs" />
     <Compile Include="ViewModels\BaseVM.cs" />

@@ -52,7 +52,7 @@ namespace HotelManagementSystem.ViewModels
             roomsList.Remove(roomsList[ID]);
 
             rooms.Remove(rooms[ID]);
-            OnPropertyChanged("features");
+            OnPropertyChanged("rooms");
 
         }
 

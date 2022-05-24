@@ -23,5 +23,13 @@ namespace HotelManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        public void SignInBackClick(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = mainWindow;
+            App.Current.MainWindow.Show();
+        }
     }
 }

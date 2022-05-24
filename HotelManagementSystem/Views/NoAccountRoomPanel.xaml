@@ -11,13 +11,15 @@
         <vm:NoAccountRoomPanelViewModel/>
     </Window.DataContext>
     <Grid Background="#040516">
+        <Label Content="Availible Rooms" Foreground="White" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="184" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+
         <Button Click="NoAccountRoomBack" Background="Yellow" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
         <ListView
                   Background="#272537"
                   Foreground="White"
                   SelectedIndex="{Binding ID}"
                   ItemsSource="{Binding rooms}"
-                  ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="160,77,160,127"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="160,102,160,102"
                   />
     </Grid>
 </Window>

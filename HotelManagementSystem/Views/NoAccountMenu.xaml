@@ -12,7 +12,7 @@
         <Label Content="Welcome, guest!" Foreground="White" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="185" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
         <Button Click="BackToMainClick" Background="Yellow" Content="BackToMain" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="141" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
         <Button Click="NoAccountRoomClick"  Background="Yellow" Content="View availible rooms" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Width="400" Cursor="Hand" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" />
-        <Button Background="Yellow" Content="Create new account" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="400" Cursor="Hand" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" />
+        <Button Click="NoAccountInfoClick" Background="Yellow" Content="Room Info" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="400" Cursor="Hand" BorderThickness="0" Height="60" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" />
         
     </Grid>
 </Window>

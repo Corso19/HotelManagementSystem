@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -160,6 +161,9 @@
     <Compile Include="Views\LoggedUserStart.xaml.cs">
       <DependentUpon>LoggedUserStart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\NoAccountInformation.xaml.cs">
+      <DependentUpon>NoAccountInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\NoAccountMenu.xaml.cs">
       <DependentUpon>NoAccountMenu.xaml</DependentUpon>
     </Compile>
@@ -240,6 +244,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\NoAccountInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\NoAccountMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

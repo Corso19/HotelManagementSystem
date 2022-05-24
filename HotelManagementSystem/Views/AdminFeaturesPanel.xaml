@@ -21,7 +21,7 @@
                   />
 
         <Button Background="Yellow" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" Command="{Binding DeleteCommand}"/>
-        <Button Background="Yellow" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
+        <Button Click="AdminUpdateFeatureClick" Background="Yellow" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
         <Button Click="AdminAddFeatureClick" Background="Yellow" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="550,333,0,0" Width="90" Cursor="Hand" BorderThickness="0" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20" Height="60" />
     </Grid>
 </Window>

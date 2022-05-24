@@ -2,6 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,9 +31,36 @@ namespace HotelManagementSystem.Models.BusinessLogicLayer
 
         }
 
+        public static class DALHelper
+        {
+            private static readonly string connectionString = ConfigurationManager.ConnectionStrings["HotelManagementDB"].ConnectionString;
+
+            public static SqlConnection Connection
+            {
+                get
+                {
+                    return new SqlConnection(connectionString);
+                }
+            }
+        }
+
         public void UpdateFeature(Feature feature)
         {
-            //hotelContext.Features.
+            using (SqlConnection con = DALHelper.Connection)
+            {
+                SqlCommand cmd = new SqlCommand("ModifyFeatures", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter Id = new SqlParameter("@Id", feature.Id);
+                SqlParameter Name = new SqlParameter("@Name", feature.Name);
+                SqlParameter Description = new SqlParameter("@Description", feature.Description);
+                SqlParameter Deleted = new SqlParameter("@Deleted", feature.Deleted);
+                cmd.Parameters.Add(Id);
+                cmd.Parameters.Add(Name);
+                cmd.Parameters.Add(Description);
+                cmd.Parameters.Add(Deleted);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
         }
 
         public ObservableCollection<Feature> GetAllFeatures()

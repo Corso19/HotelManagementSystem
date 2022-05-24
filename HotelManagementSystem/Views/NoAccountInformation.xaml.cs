@@ -15,20 +15,19 @@ using System.Windows.Shapes;
 namespace HotelManagementSystem.Views
 {
     /// <summary>
-    /// Interaction logic for AdminUpdateFeature.xaml
+    /// Interaction logic for NoAccountInformation.xaml
     /// </summary>
-    public partial class AdminUpdateFeature : Window
+    public partial class NoAccountInformation : Window
     {
-        public AdminUpdateFeature()
+        public NoAccountInformation()
         {
             InitializeComponent();
         }
-
-        public void AdminAddBackClick(object sender, RoutedEventArgs e)
+        private void NoAccountRoomBack(object sender, RoutedEventArgs e)
         {
-            AdminFeaturesPanel adminFeaturesPanel = new AdminFeaturesPanel();
+            NoAccountMenu noAccountMenu = new NoAccountMenu();
             App.Current.MainWindow.Close();
-            App.Current.MainWindow = adminFeaturesPanel;
+            App.Current.MainWindow = noAccountMenu;
             App.Current.MainWindow.Show();
         }
     }

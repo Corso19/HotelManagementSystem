@@ -39,5 +39,13 @@ namespace HotelManagementSystem.Views
             App.Current.MainWindow = adminAddfeature;
             App.Current.MainWindow.Show();
         }
+
+        public void AdminUpdateFeatureClick(object sender, RoutedEventArgs e)
+        {
+            AdminUpdateFeature adminUpdateFeature = new AdminUpdateFeature();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = adminUpdateFeature;
+            App.Current.MainWindow.Show();
+        }
     }
 }

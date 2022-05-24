@@ -39,5 +39,13 @@ namespace HotelManagementSystem.Views
             App.Current.MainWindow = noAccountRoomPanel;
             App.Current.MainWindow.Show();
         }
+
+        private void NoAccountInfoClick(object sender, RoutedEventArgs e)
+        {
+            NoAccountInformation noAccountInformation = new NoAccountInformation();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = noAccountInformation;
+            App.Current.MainWindow.Show();
+        }
     }
 }

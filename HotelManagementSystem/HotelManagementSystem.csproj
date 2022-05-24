@@ -115,6 +115,7 @@
     <Compile Include="ViewModels\AdminUpdateFeatureViewModel.cs" />
     <Compile Include="ViewModels\AdminUpdateOfferViewModel.cs" />
     <Compile Include="ViewModels\BaseVM.cs" />
+    <Compile Include="ViewModels\NoAccountRoomPanelViewModel.cs" />
     <Compile Include="ViewModels\SignInViewModel.cs" />
     <Compile Include="ViewModels\SignUpViewModel.cs" />
     <Compile Include="Views\About.xaml.cs">
@@ -161,6 +162,9 @@
     </Compile>
     <Compile Include="Views\NoAccountMenu.xaml.cs">
       <DependentUpon>NoAccountMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoAccountRoomPanel.xaml.cs">
+      <DependentUpon>NoAccountRoomPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
@@ -237,6 +241,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\NoAccountMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NoAccountRoomPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

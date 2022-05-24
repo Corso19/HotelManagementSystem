@@ -23,5 +23,21 @@ namespace HotelManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        private void BackToMainClick(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = mainWindow;
+            App.Current.MainWindow.Show();
+        }
+
+        private void NoAccountRoomClick(object sender, RoutedEventArgs e)
+        {
+            NoAccountRoomPanel noAccountRoomPanel = new NoAccountRoomPanel();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = noAccountRoomPanel;
+            App.Current.MainWindow.Show();
+        }
     }
 }
